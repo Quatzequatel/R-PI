@@ -10,7 +10,7 @@ namespace firstapp
             Console.WriteLine("hello world.");
             //blah blah
 
-            Console.Readkey();
+            Console.In.ReadLineAsync().GetAwaiter().GetResult();
         }
     }
 }
