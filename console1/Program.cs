@@ -8,7 +8,7 @@ namespace console1
         {
             Console.WriteLine("Hello World!");
 
-            Console.Readkey();
+            Console.In.ReadLineAsync().GetAwaiter().GetResult();
         }
     }
 }
