@@ -1,25 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/home/pi/src/R-PI/console1/console1.csproj": {}
+    "c:\\Users\\quatz\\source\\repos\\Quatzequatel\\r-pi\\console1\\console1.csproj": {}
   },
   "projects": {
-    "/home/pi/src/R-PI/console1/console1.csproj": {
+    "c:\\Users\\quatz\\source\\repos\\Quatzequatel\\r-pi\\console1\\console1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/pi/src/R-PI/console1/console1.csproj",
+        "projectUniqueName": "c:\\Users\\quatz\\source\\repos\\Quatzequatel\\r-pi\\console1\\console1.csproj",
         "projectName": "console1",
-        "projectPath": "/home/pi/src/R-PI/console1/console1.csproj",
-        "packagesPath": "/home/pi/.nuget/packages/",
-        "outputPath": "/home/pi/src/R-PI/console1/obj/",
+        "projectPath": "c:\\Users\\quatz\\source\\repos\\Quatzequatel\\r-pi\\console1\\console1.csproj",
+        "packagesPath": "C:\\Users\\quatz\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\quatz\\source\\repos\\Quatzequatel\\r-pi\\console1\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/home/pi/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\quatz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -37,6 +44,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Iot.Device.Bindings": {
+              "target": "Package",
+              "version": "[1.3.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -52,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/opt/dotnet/sdk/5.0.102/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
