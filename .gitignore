@@ -11,6 +11,9 @@
 *.ilk
 *.map
 *.exp
+*.cache
+*.props
+*.targets
 
 # Precompiled Headers
 *.gch
