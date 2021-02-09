@@ -17,7 +17,7 @@
                 "pipeCwd": "${workspaceRoot}",
                 "pipeProgram": "/usr/bin/ssh",
                 "pipeArgs": [
-                    "pi@192.168.1.139"
+                    "pi@192.168.1.47"
                 ],
                 "debuggerPath": "~/vsdbg/vsdbg"
             }
@@ -38,7 +38,7 @@
                 "pipeCwd": "${workspaceRoot}",
                 "pipeProgram": "/usr/bin/ssh",
                 "pipeArgs": [
-                    "pi@192.168.1.139"
+                    "pi@192.168.1.47"
                 ],
                 "debuggerPath": "~/vsdbg/vsdbg"
             }
@@ -59,7 +59,7 @@
                 "pipeCwd": "${workspaceRoot}",
                 "pipeProgram": "/usr/bin/ssh",
                 "pipeArgs": [
-                    "pi@192.168.1.139"
+                    "pi@192.168.1.47"
                 ],
                 "debuggerPath": "~/vsdbg/vsdbg"
             }
@@ -80,7 +80,7 @@
                 "pipeCwd": "${workspaceRoot}",
                 "pipeProgram": "/usr/bin/ssh",
                 "pipeArgs": [
-                    "pi@192.168.1.139"
+                    "pi@192.168.1.47"
                 ],
                 "debuggerPath": "~/vsdbg/vsdbg"
             }

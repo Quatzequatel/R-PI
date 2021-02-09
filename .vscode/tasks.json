@@ -8,8 +8,12 @@
             "problemMatcher": "$msCompile",
             "args": [
                 "-c",
-                "\"dotnet publish -r linux-arm -c Debug -o ./bin/linux-arm/publish ./${workspaceFolderBasename}.csproj && rsync -rvuz ./bin/linux-arm/publish/ pi@192.168.1.139:~/${workspaceFolderBasename}\"",
-            ]
+                "\"dotnet publish -r linux-arm -c Debug -o ./bin/linux-arm/publish ./${workspaceFolderBasename}.csproj  -AND rsync -rvuz ./bin/linux-arm/publish/ pi@192.168.1.47:~/${workspaceFolderBasename}\""
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         },
         {
             "label": "ARM32ReleasePublish",
@@ -18,7 +22,7 @@
             "problemMatcher": "$msCompile",
             "args": [
                 "-c",
-                "\"dotnet publish -r linux-arm -c Release -o ./bin/linux-arm/publish ./${workspaceFolderBasename}.csproj && rsync -rvuz ./bin/linux-arm/publish/ pi@192.168.1.139:~/${workspaceFolderBasename}\"",
+                "\"dotnet publish -r linux-arm -c Release -o ./bin/linux-arm/publish ./${workspaceFolderBasename}.csproj  -AND rsync -rvuz ./bin/linux-arm/publish/ pi@192.168.1.47:~/${workspaceFolderBasename}\""
             ]
         },
         {
@@ -28,7 +32,7 @@
             "problemMatcher": "$msCompile",
             "args": [
                 "-c",
-                "\"dotnet publish -r linux-arm64 -c Debug -o ./bin/linux-arm/publish ./${workspaceFolderBasename}.csproj && rsync -rvuz ./bin/linux-arm/publish/ pi@192.168.1.139:~/${workspaceFolderBasename}\"",
+                "\"dotnet publish -r linux-arm64 -c Debug -o ./bin/linux-arm/publish ./${workspaceFolderBasename}.csproj  -AND rsync -rvuz ./bin/linux-arm/publish/ pi@192.168.1.47:~/${workspaceFolderBasename}\""
             ]
         },
         {
@@ -38,7 +42,7 @@
             "problemMatcher": "$msCompile",
             "args": [
                 "-c",
-                "\"dotnet publish -r linux-arm64 -c Release -o ./bin/linux-arm/publish ./${workspaceFolderBasename}.csproj && rsync -rvuz ./bin/linux-arm/publish/ pi@192.168.1.139:~/${workspaceFolderBasename}\"",
+                "\"dotnet publish -r linux-arm64 -c Release -o ./bin/linux-arm/publish ./${workspaceFolderBasename}.csproj  -AND rsync -rvuz ./bin/linux-arm/publish/ pi@192.168.1.47:~/${workspaceFolderBasename}\""
             ]
         }
     ]
