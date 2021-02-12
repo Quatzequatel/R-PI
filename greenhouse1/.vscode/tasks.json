@@ -1,0 +1,69 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/greenhouse1.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "publish",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "publish",
+                "${workspaceFolder}/greenhouse1.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "watch",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "watch",
+                "run",
+                "${workspaceFolder}/greenhouse1.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        { 
+            "label": "RaspberryPiPublish", 
+            "command": "sh", 
+            "type": "shell", 
+            "dependsOn": "build", 
+            "windows": { 
+                "command": "cmd", 
+                "args": [ 
+                    "/c", 
+                    "\"dotnet publish -r linux-arm -o bin\\linux-arm\\publish --no-self-contained\"" 
+                ], 
+                "problemMatcher": [] 
+            } 
+        }, 
+        { 
+            "label": "RaspberryPiDeploy", 
+            "type": "shell", 
+            "dependsOn": "RaspberryPiPublish", 
+            "presentation": { 
+                "reveal": "always", 
+                "panel": "new" 
+            }, 
+            "windows": { 
+                "command": "c:\\cwrsync\\rsync -rvuz --rsh=\"c:\\cwrsync\\ssh\" --chmod=700 bin/linux-arm/publish/ pi@192.168.1.47:/home/pi/${workspaceFolderBasename}/" 
+            }, 
+            "problemMatcher": [] 
+        }        
+    ]
+}
