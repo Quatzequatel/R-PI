@@ -1,0 +1,20 @@
+{
+  "author": "Erik Taylor <https://dev.to/erikest>",
+  "classifications": [ "gRPC", "RaspberryPi" ], 
+  "name": "Basic .net core gRPC client / server ready for Raspberry Pi",
+  "identity": "gRPCPi",
+  "shortName": "gRPCPi",
+  "tags": {
+    "language": "C#"
+  },
+  "sourceName": "grpcpi",
+  "symbols": {
+    "runtime": {
+      "type": "parameter",
+      "datatype": "string",
+      "replaces": "RUNTIME-FRAMEWORK-VERSION",
+      "defaultValue": "3.1",
+      "description": "The .NET Core runtime framework to use."
+    }
+  }
+}
